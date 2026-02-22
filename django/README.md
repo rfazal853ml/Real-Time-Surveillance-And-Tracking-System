@@ -18,12 +18,19 @@ This is the Django REST API backend for the surveillance system, implementing pe
 
 ## Installation
 
-1. Navigate to the django directory:
+1. Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate  # On Windows
+   # source venv/bin/activate  # On macOS/Linux
+   ```
+
+2. Navigate to the django directory:
    ```bash
    cd django/surveillance_system
    ```
 
-2. Install dependencies:
+3. Install dependencies:
    ```bash
    pip install django channels opencv-python torch torchvision torchaudio scipy ultralytics deep-sort-realtime torchreid gdown django-cors-headers tensorboard
    ```
@@ -33,12 +40,12 @@ This is the Django REST API backend for the surveillance system, implementing pe
    pip install -r requirements.txt
    ```
 
-3. Apply database migrations:
+4. Apply database migrations:
    ```bash
    python manage.py migrate
    ```
 
-4. (Optional) Create a superuser for admin access:
+5. (Optional) Create a superuser for admin access:
    ```bash
    python manage.py createsuperuser
    ```
